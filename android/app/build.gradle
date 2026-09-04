@@ -1,22 +1,13 @@
 android {
-    namespace "com.example.my_lens"
-    compileSdkVersion 34
+    namespace "com.yourpackage.lens" // Ensure this matches your package name
+    compileSdkVersion 34 // Update to 34
 
     defaultConfig {
-        applicationId "com.example.my_lens"
+        applicationId "com.yourpackage.lens"
         minSdkVersion 21
-        targetSdkVersion 34
+        targetSdkVersion 34 // Update to 34
         versionCode flutterVersionCode.toInteger()
         versionName flutterVersionName
     }
-
-    buildTypes {
-        release {
-            signingConfig signingConfigs.debug
-        }
-    }
-}
-
-flutter {
-    source '../..'
+    // ...
 }
