@@ -15,6 +15,7 @@ jobs:
           channel: 'stable'
       - run: flutter create . --project-name my_lens
       - run: flutter pub get
+      - run: flutter clean
       - run: flutter build apk --release
       - uses: actions/upload-artifact@v4
         with:
